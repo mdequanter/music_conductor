@@ -28,7 +28,7 @@ WHITE = (255, 255, 255)
 
 
 # Import and initialize the pygame library
-import pygame
+#import pygame
 #pygame.init()
 # Set up the drawing window
 #screen = pygame.display.set_mode([screenWidth, screenHeight])

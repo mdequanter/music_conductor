@@ -145,9 +145,9 @@ def distance(keypoint2, keypoint1):
 def updown(keypoint2, keypoint1):
     global Ylist
     Y = Ylist[keypoint2] - Ylist[keypoint1]
-    if (Y > 20):
+    if (Y > 40):
         return ('H')
-    elif (Y < -20):
+    elif (Y < -40):
         return ('L')
     else:
         return ('M')
@@ -266,9 +266,9 @@ while True:
         client1.publish("X", json.dumps(Xlist))
 
     # render the image
-    # output.Render(img)
+    output.Render(img)
     # update the title bar
-    # output.SetStatus("{:s} | Network {:.0f} FPS".format(opt.network, net.GetNetworkFPS()))
+    output.SetStatus("{:s} | Network {:.0f} FPS".format(opt.network, net.GetNetworkFPS()))
 
     # print (net.GetNetworkFPS())
     # print out performance info
